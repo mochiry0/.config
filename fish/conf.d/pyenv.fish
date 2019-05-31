@@ -1,0 +1,1 @@
+/Users/rmochizuki/.config/fisherman/pyenv/conf.d/pyenv.fish

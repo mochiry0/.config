@@ -1,0 +1,1 @@
+/Users/rmochizuki/.config/fisherman/fishtape/completions/fishtape.fish

@@ -1,0 +1,1 @@
+/Users/rmochizuki/.config/fisherman/spin/completions/spin.fish
