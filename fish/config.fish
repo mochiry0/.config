@@ -7,10 +7,7 @@ set -g -x PATH /usr/local/opt/findutils/libexec/gnubin $PATH
 set -g -x MANPATH /usr/local/share/man $MAINPATH
 set -g -x MANPATH /usr/local/opt/coreutils/libexec/gnuman $MANPATH
 set -g -x MANPATH /usr/local/opt/findutils/libexec/gnuman $MANPATH
-
-set -g -x HOMEBREW_INSTALL_CLEANUP 1
 set -U fish_user_paths (echo $fish_user_paths | tr ' ' '\n' | sort -u)
-
 set -g -x PATH $HOME/.pyenv/shims $PATH
 eval (pyenv init - | source)
 
