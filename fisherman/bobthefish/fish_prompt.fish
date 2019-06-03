@@ -300,11 +300,11 @@ function __bobthefish_path_segment -S -a current_dir -d 'Display a shortened for
 
   switch "$current_dir"
     case /
-      set directory ' /'
+      set directory $folder_glyph ' /'
     case "$HOME"
-      set directory ' ~'
+      set directory $home_glyph ' ~'
     case '*'
-      echo -ns ' '
+      echo -ns $home_sub_glyph ' '
       set parent    (__bobthefish_pretty_parent "$current_dir")
       set directory (__bobthefish_basename "$current_dir")
   end
@@ -327,8 +327,7 @@ function __bobthefish_finish_segments -S -d 'Close open prompt segments'
     if [ "$theme_powerline_fonts" = "no" ]
       echo -ns '> '
     else
-      #echo -ns "$right_arrow_glyph "
-      echo -ns "┗ "
+      echo -ns $last_prefix_glyph ' '
       set_color $fish_color_autosuggestion
     end
   else if [ "$theme_newline_cursor" = 'clean' ]
@@ -342,7 +341,12 @@ end
 function __bobthefish_first_segments -S -d 'First prompt segments'
   if [ "$theme_newline_cursor" = 'yes' ]
     echo -ens "\n"
-    echo -ns "┏"
+    set_color normal
+    set_color $__bobthefish_current_bg
+    echo -ns $first_prefix_glyph
+    set_color $fish_color_autosuggestion
+    set_color normal
+    set __bobthefish_current_bg
   end
 end
 
@@ -548,10 +552,10 @@ function __bobthefish_prompt_os_icon -S -d 'Display OS ICON'
   set -l osname (uname)
   if [ "$osname" = "Darwin" ]
     __bobthefish_start_segment $color_os_icon
-    echo -ns " "
+    echo -ns $apple_glyph ' '
   else if [ "$osname" = "Linux" ]
     __bobthefish_start_segment $color_os_icon
-    echo -ns " "
+    echo -ns $linux_glyph ' '
   end
 end
 
@@ -894,8 +898,6 @@ end
 
 function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
 
-  __bobthefish_first_segments
-
   # Save the last status for later (do this before the `set` calls below)
   set -l last_status $status
 
@@ -903,9 +905,10 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
   __bobthefish_colors $theme_color_scheme
   type -q bobthefish_colors
     and bobthefish_colors
-
   # Start each line with a blank slate
   set -l __bobthefish_current_bg
+
+  __bobthefish_first_segments
 
   # Status flags and input mode
   __bobthefish_prompt_status $last_status

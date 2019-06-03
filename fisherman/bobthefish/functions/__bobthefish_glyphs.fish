@@ -13,6 +13,12 @@ function __bobthefish_glyphs -S -d 'Define glyphs used by bobthefish'
   set -x superuser_glyph         '$ '
   set -x bg_job_glyph            '% '
   set -x hg_glyph                \u263F
+  set -x time_glyph              \uE12E
+  set -x ok_glyph                \u2714
+  set -x fail_glyph              \u2718
+  set -x first_prefix_glyph      \u256D
+  set -x newline_prefix_glyph    \u251C
+  set -x last_prefix_glyph       \u2570
 
   # Python glyphs
   set -x superscript_glyph       \u00B9 \u00B2 \u00B3
@@ -22,8 +28,17 @@ function __bobthefish_glyphs -S -d 'Define glyphs used by bobthefish'
   set -x ruby_glyph              ''
   set -x go_glyph                ''
 
-  # Desk glyphs
+  # Desk glyphs
   set -x desk_glyph              \u25F2
+
+  # OS glyphs
+  set -x apple_glyph             \uE26E
+  set -x linux_glyph             \uE271
+
+  # Folder glyphs
+  set -x home_glyph              \uE12C
+  set -x home_sub_glyph          \uE18D
+  set -x folder_glyph            \uE818
 
   # Vagrant glyphs
   set -x vagrant_running_glyph   \u2191 # ↑ 'running'

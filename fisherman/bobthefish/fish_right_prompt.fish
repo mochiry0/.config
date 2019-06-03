@@ -105,11 +105,11 @@ function __bobthefish_exit_status -S -d 'Show exit status'
 　if [ $exit_status -ne 0 ]
     set_color normal
     set_color -b $color_exit_error
-    echo -ns $exit_status " ↵  "
+    echo -ns $fail_glyph ' ' $exit_status ' '
   else
     set_color normal
     set_color -b $color_exit_status
-    echo -ns "✔  "
+    echo -ns $ok_glyph ' '
   end
 end
 
@@ -134,6 +134,6 @@ function fish_right_prompt -d 'bobthefish is all about the right prompt'
   #echo -ns $left_black_arrow_glyph
   __bobthefish_start_rsegment $color_right
   __bobthefish_timestamp
-  echo -ne "  "
+  echo -ne ' ' $time_glyph ' '
   set_color normal
 end
