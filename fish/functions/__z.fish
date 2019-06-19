@@ -1,1 +1,0 @@
-/Users/rmochizuki/.config/fisherman/z/functions/__z.fish

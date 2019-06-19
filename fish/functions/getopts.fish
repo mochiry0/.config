@@ -1,1 +1,0 @@
-/Users/rmochizuki/.config/fisherman/getopts/getopts.fish
