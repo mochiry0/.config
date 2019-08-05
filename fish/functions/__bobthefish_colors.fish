@@ -1,1 +1,1 @@
-/Users/rmochizuki/.config/fisherman/bobthefish/functions/__bobthefish_colors.fish
+/Users/bi912605/.config/fisherman/bobthefish/functions/__bobthefish_colors.fish

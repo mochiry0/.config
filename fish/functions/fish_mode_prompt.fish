@@ -1,1 +1,1 @@
-/Users/rmochizuki/.config/fisherman/bobthefish/fish_mode_prompt.fish
+/Users/bi912605/.config/fisherman/bobthefish/fish_mode_prompt.fish
