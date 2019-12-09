@@ -22,6 +22,7 @@ set -gx PATH $HOME/.nodebrew/current/bin $PATH
 
 # Aliases
 alias tree="tree -ACN"
+alias vi="nvim"
 alias startrh='VBoxManage startvm "RHEL7" --type headless'
 alias stoprh='VBoxManage controlvm "RHEL7" acpipowerbutton'
 alias startri='VBoxManage startvm "RHEL7 IBM" --type headless'
