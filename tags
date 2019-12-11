@@ -1,0 +1,419 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+#	nvim/plugins.vim	/^nmap #  <Plug>(asterisk-z#)<Plug>(is-nohl-1)$/;"	m
+*	nvim/plugins.vim	/^nmap *  <Plug>(asterisk-z*)<Plug>(is-nohl-1)$/;"	m
+/	nvim/mappings.vim	/^vnoremap \/ :<C-U>call feedkeys('\/\\%>'.(line("'<")-1).'l\\%<'.(line("'>")+1)."l")<CR>$/;"	m
+0	nvim/mappings.vim	/^nnoremap <silent> 0 g0$/;"	m
+;	nvim/mappings.vim	/^nnoremap ; :$/;"	m
+<C-6>	nvim/ginit.vim	/^    nnoremap <silent> <C-6> <C-^>$/;"	m
+<C-H>	nvim/mappings.vim	/^nnoremap <C-H> :%s\/$/;"	m
+<C-b>	nvim/plugins.vim	/^nnoremap <silent> <C-b> :call comfortable_motion#flick(winheight(0) * -4)<CR>$/;"	m
+<C-d>	nvim/plugins.vim	/^nnoremap <silent> <C-d> :call comfortable_motion#flick(winheight(0) * 2)<CR>$/;"	m
+<C-f>	nvim/plugins.vim	/^nnoremap <silent> <C-f> :call comfortable_motion#flick(winheight(0) * 4)<CR>$/;"	m
+<C-u>	nvim/plugins.vim	/^nnoremap <silent> <C-u> :call comfortable_motion#flick(winheight(0) * -2)<CR>$/;"	m
+<F11>	nvim/mappings.vim	/^inoremap <silent> <F11> <C-O>:set spell! <bar> :AutoSaveToggle<cr>$/;"	m
+<F11>	nvim/mappings.vim	/^nnoremap <silent> <F11> :set spell! <bar> :AutoSaveToggle<cr>$/;"	m
+<F9>	nvim/after/ftplugin/cpp.vim	/^nnoremap <F9> :w <CR> :!g++ -Wall -std=c++11 % -o %<&&.\/%<<CR>$/;"	m
+<F9>	nvim/after/ftplugin/python.vim	/^    nnoremap <silent> <F9> :AsyncRun python -u "%"<CR>$/;"	m
+<Leader>hl	nvim/mappings.vim	/^nnoremap <silent><expr> <Leader>hl (&hls && v:hlsearch ? ':nohls' : ':set hls')."\\n"$/;"	m
+<M-S-m>	nvim/plugins.vim	/^    nnoremap <silent> <M-S-m> :MarkdownPreviewStop<CR>$/;"	m
+<M-down>	nvim/mappings.vim	/^nnoremap <silent> <M-down> <C-w>j$/;"	m
+<M-h>	nvim/mappings.vim	/^nnoremap <silent> <M-h> <C-w><$/;"	m
+<M-j>	nvim/mappings.vim	/^nnoremap <silent> <M-j> <C-W>-$/;"	m
+<M-k>	nvim/mappings.vim	/^nnoremap <silent> <M-k> <C-W>+$/;"	m
+<M-l>	nvim/mappings.vim	/^nnoremap <silent> <M-l> <C-w>>$/;"	m
+<M-left>	nvim/mappings.vim	/^nnoremap <silent> <M-left> <C-w>h$/;"	m
+<M-m>	nvim/plugins.vim	/^    nnoremap <silent> <M-m> :MarkdownPreview<CR>$/;"	m
+<M-right>	nvim/mappings.vim	/^nnoremap <silent> <M-right> <C-w>l$/;"	m
+<M-up>	nvim/mappings.vim	/^nnoremap <silent> <M-up> <C-w>k$/;"	m
+<S-Insert>	nvim/ginit.vim	/^    cnoremap <silent> <S-Insert> <C-R>+$/;"	m
+<S-Insert>	nvim/ginit.vim	/^    inoremap <silent>  <S-Insert>  <C-R>+$/;"	m
+<S-Tab>	nvim/mappings.vim	/^inoremap <S-Tab> <ESC><<i$/;"	m
+<ScrollWheelDown>	nvim/plugins.vim	/^noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>$/;"	m
+<ScrollWheelUp>	nvim/plugins.vim	/^noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>$/;"	m
+<Space><Space>	nvim/mappings.vim	/^nnoremap <silent> <Space><Space> a<Space><ESC>h$/;"	m
+<Space>f	nvim/plugins.vim	/^nnoremap <silent> <Space>f :NERDTreeFind<CR>$/;"	m
+<Space>s	nvim/plugins.vim	/^nnoremap <silent> <Space>s :NERDTreeToggle<CR>:wincmd p<CR>$/;"	m
+<Space>t	nvim/plugins.vim	/^nnoremap <silent> <Space>t :TagbarToggle<CR>$/;"	m
+<Tab>	nvim/mappings.vim	/^nnoremap <Tab> %$/;"	m
+<c-t>	nvim/mappings.vim	/^inoremap <silent> <c-t> <Esc>b~lea$/;"	m
+<c-u>	nvim/mappings.vim	/^inoremap <silent> <c-u> <Esc>viwUea$/;"	m
+<cr>	nvim/mappings.vim	/^inoremap <expr> <cr> ((pumvisible())?("\\<C-Y>"):("\\<cr>"))$/;"	m
+<esc>	nvim/mappings.vim	/^inoremap <expr> <esc> ((pumvisible())?("\\<C-e>"):("\\<esc>"))$/;"	m
+<leader><Space>	nvim/mappings.vim	/^nnoremap <silent> <leader><Space> :call utils#StripTrailingWhitespaces()<CR>$/;"	m
+<leader>P	nvim/mappings.vim	/^nnoremap <leader>P m`O<ESC>p``$/;"	m
+<leader>Q	nvim/mappings.vim	/^nnoremap <silent> <leader>Q :qa<CR>$/;"	m
+<leader>cd	nvim/mappings.vim	/^nnoremap <silent> <leader>cd :lcd %:p:h<CR>:pwd<CR>$/;"	m
+<leader>ev	nvim/mappings.vim	/^nnoremap <silent> <leader>ev :tabnew $MYVIMRC <bar> tcd %:h<cr>$/;"	m
+<leader>f	nvim/plugins.vim	/^nnoremap <silent> <leader>f :Leaderf file --popup<CR>$/;"	m
+<leader>gT	nvim/plugins.vim	/^nmap <leader>gT <Plug>TitlecaseLine$/;"	m
+<leader>gt	nvim/plugins.vim	/^nmap <leader>gt <Plug>Titlecase$/;"	m
+<leader>gt	nvim/plugins.vim	/^vmap <leader>gt <Plug>Titlecase$/;"	m
+<leader>p	nvim/mappings.vim	/^nnoremap <leader>p m`o<ESC>p``$/;"	m
+<leader>q	nvim/mappings.vim	/^nnoremap <silent> <leader>q :x<CR>$/;"	m
+<leader>st	nvim/mappings.vim	/^nnoremap <silent> <leader>st :call utils#SynGroup()<CR>$/;"	m
+<leader>sv	nvim/mappings.vim	/^nnoremap <silent> <leader>sv :silent update $MYVIMRC <bar> source $MYVIMRC <bar>$/;"	m
+<leader>v	nvim/mappings.vim	/^nnoremap <leader>v `[V`]$/;"	m
+<leader>w	nvim/mappings.vim	/^nnoremap <silent> <leader>w :update<CR>$/;"	m
+@@	nvim/plugins.vim	/^imap @@ <Plug>ReturnFromFootnote$/;"	m
+@@	nvim/plugins.vim	/^nmap @@ <Plug>ReturnFromFootnote$/;"	m
+C	nvim/mappings.vim	/^nnoremap C "_C$/;"	m
+F	nvim/plugins.vim	/^nmap F <Plug>Sneak_S$/;"	m
+F	nvim/plugins.vim	/^onoremap <silent> F :call sneak#wrap(v:operator, 2, 1, 1, 1)<CR>$/;"	m
+H	nvim/mappings.vim	/^nnoremap H ^$/;"	m
+L	nvim/mappings.vim	/^nnoremap L g_$/;"	m
+N	nvim/plugins.vim	/^nmap N <Plug>(is-nohl)<Plug>(anzu-N-with-echo)zzzv$/;"	m
+NERDTreeAutoDeleteBuffer	nvim/plugins.vim	/^let NERDTreeAutoDeleteBuffer = 1$/;"	v
+NERDTreeIgnore	nvim/plugins.vim	/^let NERDTreeIgnore = ['\\.pyc$', '^__pycache__$']$/;"	v
+NERDTreeMinimalUI	nvim/plugins.vim	/^let NERDTreeMinimalUI=0$/;"	v
+NERDTreeStatusline	nvim/plugins.vim	/^let NERDTreeStatusline="%{exists('b:NERDTree')?fnamemodify(b:NERDTree.root.path.str(), ':~'):''}"$/;"	v
+OO	nvim/mappings.vim	/^nnoremap <expr> OO 'm`' . v:count1 . 'O<Esc>``'$/;"	m
+OptionParser	nvim/tools/markdown2ctags.py	/^    from optparse import OptionParser$/;"	i
+P	nvim/plugins.vim	/^    nmap P <plug>(YoinkPaste_P)$/;"	m
+ScriptError	nvim/tools/markdown2ctags.py	/^class ScriptError(Exception):$/;"	c
+Section	nvim/tools/markdown2ctags.py	/^class Section():$/;"	c
+Single_quote	nvim/autoload/utils.vim	/^function! s:Single_quote(str) abort$/;"	f
+Tag	nvim/tools/markdown2ctags.py	/^class Tag():$/;"	c
+UpdateSkim	nvim/plugins.vim	/^        function! UpdateSkim(status)$/;"	f
+Y	nvim/mappings.vim	/^nnoremap Y y\$$/;"	m
+[L	nvim/mappings.vim	/^nnoremap [L :lfirst<CR>zv$/;"	m
+[Q	nvim/mappings.vim	/^nnoremap [Q :cfirst<CR>zv$/;"	m
+[l	nvim/mappings.vim	/^nnoremap [l :lprevious<CR>zv$/;"	m
+[q	nvim/mappings.vim	/^nnoremap [q :cprevious<CR>zv$/;"	m
+[y	nvim/plugins.vim	/^    nmap [y <plug>(YoinkRotateBack)$/;"	m
+\d	nvim/mappings.vim	/^nnoremap <silent> \\d :bprevious <bar> bdelete #<CR>$/;"	m
+\x	nvim/mappings.vim	/^nnoremap<silent> \\x :windo lclose <bar> cclose<CR>$/;"	m
+]L	nvim/mappings.vim	/^nnoremap ]L :llast<CR>zv$/;"	m
+]Q	nvim/mappings.vim	/^nnoremap ]Q :clast<CR>zv$/;"	m
+]l	nvim/mappings.vim	/^nnoremap ]l :lnext<CR>zv$/;"	m
+]q	nvim/mappings.vim	/^nnoremap ]q :cnext<CR>zv$/;"	m
+]y	nvim/plugins.vim	/^    nmap ]y <plug>(YoinkRotateForward)$/;"	m
+^	nvim/mappings.vim	/^nnoremap <silent> ^ g^$/;"	m
+^^	nvim/plugins.vim	/^imap ^^ <Plug>AddVimFootnote$/;"	m
+^^	nvim/plugins.vim	/^nmap ^^ <Plug>AddVimFootnote$/;"	m
+__eq__	nvim/tools/markdown2ctags.py	/^    def __eq__(self, other):$/;"	m	class:Tag	file:
+__ge__	nvim/tools/markdown2ctags.py	/^    def __ge__(self, other):$/;"	m	class:Tag	file:
+__gt__	nvim/tools/markdown2ctags.py	/^    def __gt__(self, other):$/;"	m	class:Tag	file:
+__init__	nvim/tools/markdown2ctags.py	/^    def __init__(self, level, name, line, lineNumber, filename, parent=None):$/;"	m	class:Section
+__init__	nvim/tools/markdown2ctags.py	/^    def __init__(self, tagName, tagFile, tagAddress):$/;"	m	class:Tag
+__le__	nvim/tools/markdown2ctags.py	/^    def __le__(self, other):$/;"	m	class:Tag	file:
+__lt__	nvim/tools/markdown2ctags.py	/^    def __lt__(self, other):$/;"	m	class:Tag	file:
+__ne__	nvim/tools/markdown2ctags.py	/^    def __ne__(self, other):$/;"	m	class:Tag	file:
+__repr__	nvim/tools/markdown2ctags.py	/^    def __repr__(self):$/;"	m	class:Section	file:
+__repr__	nvim/tools/markdown2ctags.py	/^    def __repr__(self):$/;"	m	class:Tag	file:
+__str__	nvim/tools/markdown2ctags.py	/^    def __str__(self):$/;"	m	class:Tag	file:
+_formatFields	nvim/tools/markdown2ctags.py	/^    def _formatFields(self):$/;"	m	class:Tag
+accurate_syn_highlight	nvim/autocommands.vim	/^augroup accurate_syn_highlight$/;"	a
+addField	nvim/tools/markdown2ctags.py	/^    def addField(self, field_type, value=None):$/;"	m	class:Tag
+append_ul	nvim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+ask	nvim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+ask_no_interrupt	nvim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+assign_name	nvim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+assoc	nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+atxHeadingRe	nvim/tools/markdown2ctags.py	/^atxHeadingRe = re.compile(r'^(#+)\\s+(.*?)(?:\\s+#+)?\\s*$')$/;"	v
+auto_read	nvim/autocommands.vim	/^augroup auto_read$/;"	a
+b:AutoPairs	nvim/after/ftplugin/tex.vim	/^	let b:AutoPairs = AutoPairsDefine({'<' : '>'})$/;"	v
+b:AutoPairs	nvim/after/ftplugin/tex.vim	/^	let b:AutoPairs = {'(':')', '[':']', '{':'}', '<':'>'}$/;"	v
+b:AutoPairs	nvim/after/ftplugin/vim.vim	/^	let b:AutoPairs = AutoPairsDefine({'<' : '>'})$/;"	v
+b:AutoPairs	nvim/after/ftplugin/vim.vim	/^	let b:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", "`":"`", '<':'>'}$/;"	v
+bang	nvim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+bar	nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
+batchfile	nvim/autoload/plug.vim	/^  function! s:batchfile(cmd)$/;"	f
+c	nvim/mappings.vim	/^nnoremap c "_c$/;"	m
+cc	nvim/mappings.vim	/^nnoremap cc "_cc$/;"	m
+check_ruby	nvim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+checkout	nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+chsh	nvim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+clean	nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+cli_main	nvim/tools/markdown2ctags.py	/^def cli_main():$/;"	f
+compare_git_uri	nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+ctagNameEscape	nvim/tools/markdown2ctags.py	/^def ctagNameEscape(text):$/;"	f
+ctagSearchEscape	nvim/tools/markdown2ctags.py	/^def ctagSearchEscape(text):$/;"	f
+define_commands	nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+delete	nvim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+delete_op	nvim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+diff	nvim/autoload/plug.vim	/^function! s:diff()$/;"	f
+dirpath	nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+do	nvim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+doautocmd	nvim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+dobufread	nvim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+dynamic_smartcase	nvim/autocommands.vim	/^augroup dynamic_smartcase$/;"	a
+err	nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+errno	nvim/tools/markdown2ctags.py	/^        import errno$/;"	i
+esc	nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+escrtp	nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+extract_name	nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+f	nvim/plugins.vim	/^nmap f <Plug>Sneak_s$/;"	m
+f	nvim/plugins.vim	/^onoremap <silent> f :call sneak#wrap(v:operator, 2, 0, 1, 1)<CR>$/;"	m
+findSections	nvim/tools/markdown2ctags.py	/^def findSections(filename, lines):$/;"	f
+find_name	nvim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+finish	nvim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+finish_bindings	nvim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+format_git_log	nvim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+format_message	nvim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+g#	nvim/plugins.vim	/^nmap g# <Plug>(asterisk-gz#)<Plug>(is-nohl-1)$/;"	m
+g*	nvim/plugins.vim	/^nmap g* <Plug>(asterisk-gz*)<Plug>(is-nohl-1)$/;"	m
+g:MY_DICT	nvim/options.vim	/^let g:MY_DICT = expand(g:nvim_config_root . '\/dict\/words')$/;"	v
+g:PLUGIN_HOME	nvim/plugins.vim	/^    let g:PLUGIN_HOME="\/usr\/local\/share\/nvim\/site"$/;"	v
+g:PLUGIN_HOME	nvim/plugins.vim	/^    let g:PLUGIN_HOME=expand(stdpath('data') . '\/plugged')$/;"	v
+g:SimpylFold_fold_docstring	nvim/plugins.vim	/^let g:SimpylFold_fold_docstring = 0$/;"	v
+g:SuperTabClosePreviewOnPopupClose	nvim/plugins.vim	/^let g:SuperTabClosePreviewOnPopupClose = 1$/;"	v
+g:SuperTabDefaultCompletionType	nvim/plugins.vim	/^let g:SuperTabDefaultCompletionType = '<c-n>'$/;"	v
+g:SuperTabMappingBackward	nvim/plugins.vim	/^let g:SuperTabMappingBackward = '<s-tab>'$/;"	v
+g:SuperTabMappingForward	nvim/plugins.vim	/^let g:SuperTabMappingForward = '<tab>'$/;"	v
+g:UltiSnipsExpandTrigger	nvim/plugins.vim	/^let g:UltiSnipsExpandTrigger='<tab>'$/;"	v
+g:UltiSnipsJumpBackwardTrigger	nvim/plugins.vim	/^let g:UltiSnipsJumpBackwardTrigger='<c-k>'$/;"	v
+g:UltiSnipsJumpForwardTrigger	nvim/plugins.vim	/^let g:UltiSnipsJumpForwardTrigger='<c-j>'$/;"	v
+g:UltiSnipsSnippetDirectories	nvim/plugins.vim	/^let g:UltiSnipsSnippetDirectories=['UltiSnips', 'my_snippets']$/;"	v
+g:VIM_PLUG_PATH	nvim/plugins.vim	/^    let g:VIM_PLUG_PATH = expand(g:nvim_config_root . '\/autoload\/plug.vim')$/;"	v
+g:airline#extensions#anzu#enabled	nvim/plugins.vim	/^let g:airline#extensions#anzu#enabled = 0$/;"	v
+g:airline#extensions#hunks#non_zero_only	nvim/plugins.vim	/^let g:airline#extensions#hunks#non_zero_only = 1$/;"	v
+g:airline#extensions#tabline#buffer_nr_format	nvim/plugins.vim	/^let g:airline#extensions#tabline#buffer_nr_format = '%s. '$/;"	v
+g:airline#extensions#tabline#buffer_nr_show	nvim/plugins.vim	/^let g:airline#extensions#tabline#buffer_nr_show = 1$/;"	v
+g:airline#extensions#tabline#enabled	nvim/plugins.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
+g:airline#extensions#tabline#formatter	nvim/plugins.vim	/^let g:airline#extensions#tabline#formatter = 'unique_tail_improved'$/;"	v
+g:airline#extensions#tagbar#enabled	nvim/plugins.vim	/^let g:airline#extensions#tagbar#enabled = 1$/;"	v
+g:airline_highlighting_cache	nvim/plugins.vim	/^let g:airline_highlighting_cache = 1$/;"	v
+g:airline_powerline_fonts	nvim/plugins.vim	/^let g:airline_powerline_fonts = 0$/;"	v
+g:airline_skip_empty_sections	nvim/plugins.vim	/^let g:airline_skip_empty_sections = 1$/;"	v
+g:airline_symbols	nvim/plugins.vim	/^    let g:airline_symbols = {}$/;"	v
+g:airline_symbols	nvim/plugins.vim	/^let g:airline_symbols.branch = '⎇'$/;"	v
+g:airline_symbols	nvim/plugins.vim	/^let g:airline_symbols.paste = 'ρ'$/;"	v
+g:airline_symbols	nvim/plugins.vim	/^let g:airline_symbols.spell = 'Ꞩ'$/;"	v
+g:airline_theme	nvim/plugins.vim	/^    let g:airline_theme=s:theme$/;"	v
+g:anzu_search_limit	nvim/plugins.vim	/^let g:anzu_search_limit = 500000$/;"	v
+g:asyncrun_encs	nvim/plugins.vim	/^    let g:asyncrun_encs = 'gbk'$/;"	v
+g:asyncrun_open	nvim/plugins.vim	/^let g:asyncrun_open = 6$/;"	v
+g:auto_save	nvim/plugins.vim	/^let g:auto_save = 1$/;"	v
+g:auto_save_events	nvim/plugins.vim	/^let g:auto_save_events = ['InsertLeave', 'TextChanged']$/;"	v
+g:auto_save_silent	nvim/plugins.vim	/^let g:auto_save_silent = 0$/;"	v
+g:backupdir	nvim/options.vim	/^let g:backupdir=expand(stdpath('data') . '\/backup')$/;"	v
+g:comfortable_motion_no_default_key_mappings	nvim/plugins.vim	/^let g:comfortable_motion_no_default_key_mappings = 1$/;"	v
+g:comfortable_motion_scroll_down_key	nvim/plugins.vim	/^let g:comfortable_motion_scroll_down_key = 'j'$/;"	v
+g:comfortable_motion_scroll_up_key	nvim/plugins.vim	/^let g:comfortable_motion_scroll_up_key = 'k'$/;"	v
+g:config_file_list	nvim/init.vim	/^let g:config_file_list = ['variables.vim',$/;"	v
+g:deoplete#enable_at_startup	nvim/plugins.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:deoplete#sources#jedi#ignore_errors	nvim/plugins.vim	/^let g:deoplete#sources#jedi#ignore_errors = 1$/;"	v
+g:deoplete#sources#jedi#server_timeout	nvim/plugins.vim	/^let g:deoplete#sources#jedi#server_timeout = 50$/;"	v
+g:deoplete#sources#jedi#show_docstring	nvim/plugins.vim	/^let g:deoplete#sources#jedi#show_docstring = 0$/;"	v
+g:gruvbox_filetype_hi_groups	nvim/ui.vim	/^    let g:gruvbox_filetype_hi_groups = 0$/;"	v
+g:gruvbox_italicize_strings	nvim/ui.vim	/^    let g:gruvbox_italicize_strings=1$/;"	v
+g:gruvbox_italics	nvim/ui.vim	/^    let g:gruvbox_italics=1$/;"	v
+g:gruvbox_plugin_hi_groups	nvim/ui.vim	/^    let g:gruvbox_plugin_hi_groups = 0$/;"	v
+g:highlightedyank_highlight_duration	nvim/plugins.vim	/^let g:highlightedyank_highlight_duration = 1000$/;"	v
+g:is_linux	nvim/init.vim	/^let g:is_linux = has('unix') && !has('macunix')$/;"	v
+g:is_mac	nvim/init.vim	/^let g:is_mac = has('macunix')$/;"	v
+g:is_win	nvim/init.vim	/^let g:is_win = has('win32') || has('win64')$/;"	v
+g:jedi#completions_enabled	nvim/plugins.vim	/^let g:jedi#completions_enabled = 0$/;"	v
+g:jedi#show_call_signatures	nvim/plugins.vim	/^let g:jedi#show_call_signatures = '0'$/;"	v
+g:loaded_2html_plugin	nvim/variables.vim	/^let g:loaded_2html_plugin = 1$/;"	v
+g:loaded_matchit	nvim/variables.vim	/^let g:loaded_matchit = 1$/;"	v
+g:loaded_matchparen	nvim/variables.vim	/^let g:loaded_matchparen = 1$/;"	v
+g:loaded_plug	nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:loaded_python_provider	nvim/variables.vim	/^let g:loaded_python_provider=0$/;"	v
+g:loaded_tarPlugin	nvim/variables.vim	/^let g:loaded_tarPlugin = 1$/;"	v
+g:loaded_zipPlugin	nvim/variables.vim	/^let g:loaded_zipPlugin = 1$/;"	v
+g:matchup_delim_noskips	nvim/plugins.vim	/^let g:matchup_delim_noskips = 0$/;"	v
+g:matchup_matchparen_deferred	nvim/plugins.vim	/^let g:matchup_matchparen_deferred = 1$/;"	v
+g:matchup_matchparen_insert_timeout	nvim/plugins.vim	/^let g:matchup_matchparen_insert_timeout = 30$/;"	v
+g:matchup_matchparen_offscreen	nvim/plugins.vim	/^let g:matchup_matchparen_offscreen = {'method': 'popup'}$/;"	v
+g:matchup_matchparen_timeout	nvim/plugins.vim	/^let g:matchup_matchparen_timeout = 100$/;"	v
+g:matchup_override_vimtex	nvim/plugins.vim	/^let g:matchup_override_vimtex = 1$/;"	v
+g:md_ctags_bin	nvim/plugins.vim	/^    let g:md_ctags_bin=fnamemodify(g:nvim_config_root."\/tools\/markdown2ctags.py", ":p")$/;"	v
+g:md_ctags_bin	nvim/plugins.vim	/^    let g:md_ctags_bin=fnamemodify(g:nvim_config_root."\\\\tools\\\\markdown2ctags.exe", ":p")$/;"	v
+g:mkdp_auto_close	nvim/plugins.vim	/^    let g:mkdp_auto_close = 0$/;"	v
+g:neomake_error_sign	nvim/plugins.vim	/^let g:neomake_error_sign={'text': '✗'}$/;"	v
+g:neomake_open_list	nvim/plugins.vim	/^let g:neomake_open_list = 0$/;"	v
+g:neomake_python_enabled_makers	nvim/plugins.vim	/^let g:neomake_python_enabled_makers = ['pylint']$/;"	v
+g:neomake_tex_enabled_makers	nvim/plugins.vim	/^let g:neomake_tex_enabled_makers = []$/;"	v
+g:neomake_warning_sign	nvim/plugins.vim	/^let g:neomake_warning_sign={'text': '!', 'texthl': 'NeomakeWarningSign'}$/;"	v
+g:netrw_liststyle	nvim/variables.vim	/^let g:netrw_liststyle = 3$/;"	v
+g:netrw_nogx	nvim/plugins.vim	/^    let g:netrw_nogx = 1$/;"	v
+g:nvim_config_root	nvim/init.vim	/^let g:nvim_config_root = expand('<sfile>:p:h')$/;"	v
+g:nvim_system_wide	nvim/init.vim	/^        let g:nvim_system_wide = 0$/;"	v
+g:nvim_system_wide	nvim/init.vim	/^let g:nvim_system_wide=0$/;"	v
+g:one_allow_italics	nvim/ui.vim	/^let g:one_allow_italics = 1$/;"	v
+g:pandoc#syntax#conceal#urls	nvim/plugins.vim	/^let g:pandoc#syntax#conceal#urls = 1$/;"	v
+g:plugs_order	nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:python3_host_prog	nvim/variables.vim	/^        let g:python3_host_prog=exepath('python')$/;"	v
+g:python3_host_prog	nvim/variables.vim	/^        let g:python3_host_prog=substitute(exepath('python'), '.exe$', '', 'g')$/;"	v
+g:semshi#error_sign	nvim/plugins.vim	/^let g:semshi#error_sign=v:false$/;"	v
+g:semshi#mark_selected_nodes	nvim/plugins.vim	/^let g:semshi#mark_selected_nodes=0$/;"	v
+g:signify_sign_change	nvim/plugins.vim	/^let g:signify_sign_change = '~'$/;"	v
+g:signify_vcs_list	nvim/plugins.vim	/^let g:signify_vcs_list = [ 'git' ]$/;"	v
+g:sneak#label	nvim/plugins.vim	/^let g:sneak#label = 1$/;"	v
+g:sneak#s_next	nvim/plugins.vim	/^let g:sneak#s_next = 1$/;"	v
+g:tagbar_type_markdown	nvim/plugins.vim	/^let g:tagbar_type_markdown = {$/;"	v
+g:tex_conceal	nvim/plugins.vim	/^let g:tex_conceal = ''$/;"	v
+g:tex_flavor	nvim/plugins.vim	/^    let g:tex_flavor = 'latex'$/;"	v
+g:titlecase_map_keys	nvim/plugins.vim	/^let g:titlecase_map_keys = 0$/;"	v
+g:vim_markdown_conceal	nvim/plugins.vim	/^let g:vim_markdown_conceal = 0$/;"	v
+g:vim_markdown_folding_disabled	nvim/plugins.vim	/^let g:vim_markdown_folding_disabled = 1$/;"	v
+g:vim_markdown_frontmatter	nvim/plugins.vim	/^let g:vim_markdown_frontmatter = 1  " for YAML format$/;"	v
+g:vim_markdown_json_frontmatter	nvim/plugins.vim	/^let g:vim_markdown_json_frontmatter = 1  " for JSON format$/;"	v
+g:vim_markdown_math	nvim/plugins.vim	/^let g:vim_markdown_math = 0$/;"	v
+g:vim_markdown_toc_autofit	nvim/plugins.vim	/^let g:vim_markdown_toc_autofit = 1$/;"	v
+g:vim_markdown_toml_frontmatter	nvim/plugins.vim	/^let g:vim_markdown_toml_frontmatter = 1  " for TOML format$/;"	v
+g:vimtex_compiler_callback_hooks	nvim/plugins.vim	/^        let g:vimtex_compiler_callback_hooks = ['UpdateSkim']$/;"	v
+g:vimtex_compiler_latexmk	nvim/plugins.vim	/^    let g:vimtex_compiler_latexmk = {$/;"	v
+g:vimtex_toc_config	nvim/plugins.vim	/^    let g:vimtex_toc_config = {$/;"	v
+g:vimtex_view_general_options	nvim/plugins.vim	/^        let g:vimtex_view_general_options = '-r @line @pdf @tex'$/;"	v
+g:vimtex_view_general_options	nvim/plugins.vim	/^        let g:vimtex_view_general_options$/;"	v
+g:vimtex_view_general_options_latexmk	nvim/plugins.vim	/^        let g:vimtex_view_general_options_latexmk = '-reuse-instance'$/;"	v
+g:vimtex_view_general_viewer	nvim/plugins.vim	/^        let g:vimtex_view_general_viewer = 'SumatraPDF'$/;"	v
+g:vimtex_view_general_viewer	nvim/plugins.vim	/^        let g:vimtex_view_general_viewer$/;"	v
+g:yoinkMoveCursorToEndOfPaste	nvim/plugins.vim	/^    let g:yoinkMoveCursorToEndOfPaste = 0$/;"	v
+g:yoinkSyncSystemClipboardOnFocus	nvim/plugins.vim	/^    let g:yoinkSyncSystemClipboardOnFocus = 1$/;"	v
+genTagsFile	nvim/tools/markdown2ctags.py	/^def genTagsFile(output, tags, sort):$/;"	f
+git_validate	nvim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+git_version_requirement	nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+glob	nvim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+glob_dir	nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+goyo_work_with_limelight	nvim/plugins.vim	/^augroup goyo_work_with_limelight$/;"	a
+hash_match	nvim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+infer_properties	nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+install	nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+is_local_plug	nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+is_managed	nvim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+is_preview_window_open	nvim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+is_updated	nvim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+j	nvim/mappings.vim	/^nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')$/;"	m
+jk	nvim/mappings.vim	/^inoremap <silent> jk <Esc>$/;"	m
+job_abort	nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+job_cb	nvim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+job_exit_cb	nvim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+job_out_cb	nvim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+k	nvim/mappings.vim	/^nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')$/;"	m
+last_non_empty_line	nvim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+lastline	nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+lazy	nvim/autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+lines	nvim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+load_plugin	nvim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+loaded_gzip	nvim/variables.vim	/^let loaded_gzip = 1$/;"	v
+loaded_names	nvim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+lod	nvim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+lod_cmd	nvim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+lod_ft	nvim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+lod_map	nvim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+log	nvim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+log4	nvim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+logpos	nvim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+lpad	nvim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+main	nvim/tools/markdown2ctags.py	/^def main():$/;"	f
+mapleader	nvim/variables.vim	/^let mapleader = ','$/;"	v
+matchup_matchparen_highlight	nvim/plugins.vim	/^augroup matchup_matchparen_highlight$/;"	a
+matchup_matchword_highlight	nvim/plugins.vim	/^augroup matchup_matchword_highlight$/;"	a
+n	nvim/plugins.vim	/^nmap n <Plug>(is-nohl)<Plug>(anzu-n-with-echo)zzzv$/;"	m
+names	nvim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+new_window	nvim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+non_utf8_file_warn	nvim/autocommands.vim	/^augroup non_utf8_file_warn$/;"	a
+nvim_cb	nvim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+ob	nvim/plugins.vim	/^    nmap ob <Plug>(openbrowser-smart-search)$/;"	m
+ob	nvim/plugins.vim	/^    vmap ob <Plug>(openbrowser-smart-search)$/;"	m
+oo	nvim/mappings.vim	/^nnoremap <expr> oo 'm`' . v:count1 . 'o<Esc>``'$/;"	m
+p	nvim/plugins.vim	/^    nmap p <plug>(YoinkPaste_p)$/;"	m
+pandoc_syntax	nvim/plugins.vim	/^augroup pandoc_syntax$/;"	a
+parse_options	nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+path	nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+plug#	nvim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#begin	nvim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug#shellescape	nvim/autoload/plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
+plug_call	nvim/autoload/plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+plug_expand	nvim/autoload/plug.vim	/^function! s:plug_expand(fmt)$/;"	f
+plug_fnamemodify	nvim/autoload/plug.vim	/^function! s:plug_fnamemodify(fname, mods)$/;"	f
+plug_getcwd	nvim/autoload/plug.vim	/^function! s:plug_getcwd()$/;"	f
+plug_init	nvim/plugins.vim	/^        augroup plug_init$/;"	a
+plug_tempname	nvim/autoload/plug.vim	/^function! s:plug_tempname()$/;"	f
+plug_window_exists	nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+popSections	nvim/tools/markdown2ctags.py	/^def popSections(sections, level):$/;"	f
+prepare	nvim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+preview_commit	nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+progress_bar	nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+progress_opt	nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+q;	nvim/mappings.vim	/^nnoremap q; q:$/;"	m
+re	nvim/tools/markdown2ctags.py	/^import re$/;"	i
+reap	nvim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+regress_bar	nvim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+reload_plugins	nvim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+remove_rtp	nvim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+remove_triggers	nvim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+reorg_rtp	nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+resume_edit_position	nvim/autocommands.vim	/^augroup resume_edit_position$/;"	a
+retry	nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
+revert	nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+rm_rf	nvim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+rtp	nvim/autoload/plug.vim	/^function! s:rtp(spec)$/;"	f
+s:TYPE	nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:base_spec	nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': 'master', 'frozen': 0 }$/;"	v
+s:candidate_airlinetheme	nvim/plugins.vim	/^let s:candidate_airlinetheme = ['ayu_mirage', 'base16_flat',$/;"	v
+s:cpo_save	nvim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:first_rtp	nvim/autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
+s:idx	nvim/plugins.vim	/^let s:idx = utils#RandInt(0, len(s:candidate_airlinetheme)-1)$/;"	v
+s:is_win	nvim/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:last_rtp	nvim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
+s:loaded	nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:mac_gui	nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:me	nvim/autoload/plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:nvim	nvim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:plug_buf	nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_src	nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:theme	nvim/plugins.vim	/^let s:theme = s:candidate_airlinetheme[s:idx]$/;"	v
+s:triggers	nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:vim8	nvim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+section	nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+section	nvim/tools/markdown2ctags.py	/^    def section(section, sro):$/;"	m	class:Tag
+sectionsToTags	nvim/tools/markdown2ctags.py	/^def sectionsToTags(sections, sro):$/;"	f
+settextHeadingRe	nvim/tools/markdown2ctags.py	/^settextHeadingRe = re.compile(r'^[-=]+$')$/;"	v
+settextSubjectRe	nvim/tools/markdown2ctags.py	/^settextSubjectRe = re.compile(r'^[^\\s]+.*$')$/;"	v
+shellesc_cmd	nvim/autoload/plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
+shellesc_ps1	nvim/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
+shellesc_sh	nvim/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
+signature_highlight	nvim/plugins.vim	/^augroup signature_highlight$/;"	a
+snapshot	nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+source	nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+spawn	nvim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+split_rtp	nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+status	nvim/autoload/plug.vim	/^function! s:status()$/;"	f
+status_load	nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+status_update	nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+switch_in	nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+switch_out	nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+syntax	nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+sys	nvim/tools/markdown2ctags.py	/^import sys$/;"	i
+system	nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+system_chomp	nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+term_settings	nvim/autocommands.vim	/^augroup term_settings$/;"	a
+text_file_width	nvim/autocommands.vim	/^augroup text_file_width$/;"	a
+tick	nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
+to_a	nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+to_s	nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+trim	nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+update	nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+update_finish	nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+update_impl	nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+update_python	nvim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+update_ruby	nvim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+update_vim	nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+upgrade	nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+upgrade_specs	nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+utils#Cabbrev	nvim/autoload/utils.vim	/^function! utils#Cabbrev(key, value) abort$/;"	f
+utils#HasAirlinetheme	nvim/autoload/utils.vim	/^function! utils#HasAirlinetheme(name) abort$/;"	f
+utils#HasColorscheme	nvim/autoload/utils.vim	/^function! utils#HasColorscheme(name) abort$/;"	f
+utils#MyFoldText	nvim/autoload/utils.vim	/^function! utils#MyFoldText()$/;"	f
+utils#RandInt	nvim/autoload/utils.vim	/^function! utils#RandInt(Low, High) abort$/;"	f
+utils#StripTrailingWhitespaces	nvim/autoload/utils.vim	/^function utils#StripTrailingWhitespaces() abort$/;"	f
+utils#SynGroup	nvim/autoload/utils.vim	/^function! utils#SynGroup() abort$/;"	f
+utils#VimFolds	nvim/autoload/utils.vim	/^function! utils#VimFolds(lnum)$/;"	f
+version_requirement	nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+warn	nvim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+with_cd	nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir, ...)$/;"	f
+wrap_cmds	nvim/autoload/plug.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
+y	nvim/plugins.vim	/^    nmap y <plug>(YoinkYankPreserveCursorPosition)$/;"	m
