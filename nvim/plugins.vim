@@ -539,7 +539,7 @@ nmap <leader>gT <Plug>TitlecaseLine
 
 """"""""""""""""""""""""vim-auto-save settings"""""""""""""""""""""""
 " Enable autosave on nvim startup
-let g:auto_save = 1
+let g:auto_save = 0
 
 " A list of events to trigger autosave
 let g:auto_save_events = ['InsertLeave', 'TextChanged']
