@@ -106,6 +106,8 @@ endif
 " Plug 'kaicataldo/material.vim'
 Plug 'joshdick/onedark.vim'
 
+Plug 'colinmcdonagh/vim-gosu'
+
 " colorful status line and theme
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -299,6 +301,10 @@ Plug 'tpope/vim-scriptease'
 Plug 'skywind3000/asyncrun.vim'
 " Another asynchronous plugin
 " Plug 'tpope/vim-dispatch'
+
+" Indentline visualization"
+Plug 'Yggdroot/indentLine'
+
 call plug#end()
 "}}
 "}
