@@ -61,10 +61,13 @@
 <leader>w	nvim/mappings.vim	/^nnoremap <silent> <leader>w :update<CR>$/;"	m
 @@	nvim/plugins.vim	/^imap @@ <Plug>ReturnFromFootnote$/;"	m
 @@	nvim/plugins.vim	/^nmap @@ <Plug>ReturnFromFootnote$/;"	m
+BASH	fish/functions/__bass.py	/^BASH = 'bash'$/;"	v
 C	nvim/mappings.vim	/^nnoremap C "_C$/;"	m
 F	nvim/plugins.vim	/^nmap F <Plug>Sneak_S$/;"	m
 F	nvim/plugins.vim	/^onoremap <silent> F :call sneak#wrap(v:operator, 2, 1, 1, 1)<CR>$/;"	m
+FISH_READONLY	fish/functions/__bass.py	/^FISH_READONLY = [$/;"	v
 H	nvim/mappings.vim	/^nnoremap H ^$/;"	m
+IGNORED	fish/functions/__bass.py	/^IGNORED = [$/;"	v
 L	nvim/mappings.vim	/^nnoremap L g_$/;"	m
 N	nvim/plugins.vim	/^nmap N <Plug>(is-nohl)<Plug>(anzu-N-with-echo)zzzv$/;"	m
 NERDTreeAutoDeleteBuffer	nvim/plugins.vim	/^let NERDTreeAutoDeleteBuffer = 1$/;"	v
@@ -130,6 +133,7 @@ checkout	nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
 chsh	nvim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
 clean	nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
 cli_main	nvim/tools/markdown2ctags.py	/^def cli_main():$/;"	f
+comment	fish/functions/__bass.py	/^def comment(string):$/;"	f
 compare_git_uri	nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
 ctagNameEscape	nvim/tools/markdown2ctags.py	/^def ctagNameEscape(text):$/;"	f
 ctagSearchEscape	nvim/tools/markdown2ctags.py	/^def ctagSearchEscape(text):$/;"	f
@@ -145,6 +149,7 @@ dynamic_smartcase	nvim/autocommands.vim	/^augroup dynamic_smartcase$/;"	a
 err	nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
 errno	nvim/tools/markdown2ctags.py	/^        import errno$/;"	i
 esc	nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+escape	fish/functions/__bass.py	/^def escape(string):$/;"	f
 escrtp	nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
 extract_name	nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
 f	nvim/plugins.vim	/^nmap f <Plug>Sneak_s$/;"	m
@@ -269,12 +274,14 @@ g:vimtex_view_general_viewer	nvim/plugins.vim	/^        let g:vimtex_view_genera
 g:yoinkMoveCursorToEndOfPaste	nvim/plugins.vim	/^    let g:yoinkMoveCursorToEndOfPaste = 0$/;"	v
 g:yoinkSyncSystemClipboardOnFocus	nvim/plugins.vim	/^    let g:yoinkSyncSystemClipboardOnFocus = 1$/;"	v
 genTagsFile	nvim/tools/markdown2ctags.py	/^def genTagsFile(output, tags, sort):$/;"	f
+gen_script	fish/functions/__bass.py	/^def gen_script():$/;"	f
 git_validate	nvim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
 git_version_requirement	nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
 glob	nvim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
 glob_dir	nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
 goyo_work_with_limelight	nvim/plugins.vim	/^augroup goyo_work_with_limelight$/;"	a
 hash_match	nvim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+ignored	fish/functions/__bass.py	/^def ignored(name):$/;"	f
 infer_properties	nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
 install	nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
 is_local_plug	nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
@@ -287,6 +294,7 @@ job_abort	nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
 job_cb	nvim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
 job_exit_cb	nvim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
 job_out_cb	nvim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+json	fish/functions/__bass.py	/^import json$/;"	i
 k	nvim/mappings.vim	/^nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')$/;"	m
 last_non_empty_line	nvim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
 lastline	nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
@@ -315,6 +323,7 @@ nvim_cb	nvim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict a
 ob	nvim/plugins.vim	/^    nmap ob <Plug>(openbrowser-smart-search)$/;"	m
 ob	nvim/plugins.vim	/^    vmap ob <Plug>(openbrowser-smart-search)$/;"	m
 oo	nvim/mappings.vim	/^nnoremap <expr> oo 'm`' . v:count1 . 'o<Esc>``'$/;"	m
+os	fish/functions/__bass.py	/^import os$/;"	i
 p	nvim/plugins.vim	/^    nmap p <plug>(YoinkPaste_p)$/;"	m
 pandoc_syntax	nvim/plugins.vim	/^augroup pandoc_syntax$/;"	a
 parse_options	nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
@@ -335,6 +344,7 @@ plug_window_exists	nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"
 popSections	nvim/tools/markdown2ctags.py	/^def popSections(sections, level):$/;"	f
 prepare	nvim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
 preview_commit	nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+print_function	fish/functions/__bass.py	/^from __future__ import print_function$/;"	i
 progress_bar	nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
 progress_opt	nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
 q;	nvim/mappings.vim	/^nnoremap q; q:$/;"	m
@@ -368,6 +378,8 @@ s:plug_tab	nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"
 s:theme	nvim/plugins.vim	/^let s:theme = s:candidate_airlinetheme[s:idx]$/;"	v
 s:triggers	nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
 s:vim8	nvim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+script	fish/functions/__bass.py	/^    script = gen_script()$/;"	v
+script_file	fish/functions/__bass.py	/^script_file = os.fdopen(3, 'w')$/;"	v
 section	nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
 section	nvim/tools/markdown2ctags.py	/^    def section(section, sro):$/;"	m	class:Tag
 sectionsToTags	nvim/tools/markdown2ctags.py	/^def sectionsToTags(sections, sro):$/;"	f
@@ -376,6 +388,7 @@ settextSubjectRe	nvim/tools/markdown2ctags.py	/^settextSubjectRe = re.compile(r'
 shellesc_cmd	nvim/autoload/plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
 shellesc_ps1	nvim/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
 shellesc_sh	nvim/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
+signal	fish/functions/__bass.py	/^import signal$/;"	i
 signature_highlight	nvim/plugins.vim	/^augroup signature_highlight$/;"	a
 snapshot	nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
 source	nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
@@ -384,9 +397,11 @@ split_rtp	nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
 status	nvim/autoload/plug.vim	/^function! s:status()$/;"	f
 status_load	nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
 status_update	nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+subprocess	fish/functions/__bass.py	/^import subprocess$/;"	i
 switch_in	nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
 switch_out	nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
 syntax	nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+sys	fish/functions/__bass.py	/^import sys$/;"	i
 sys	nvim/tools/markdown2ctags.py	/^import sys$/;"	i
 system	nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
 system_chomp	nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
@@ -395,6 +410,7 @@ text_file_width	nvim/autocommands.vim	/^augroup text_file_width$/;"	a
 tick	nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
 to_a	nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
 to_s	nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+traceback	fish/functions/__bass.py	/^import traceback$/;"	i
 trim	nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
 update	nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
 update_finish	nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f

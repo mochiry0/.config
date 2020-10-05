@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/bi912605/.config/fish/tide_theme/configure/configs'
+let g:netrw_dirhist_3='/Users/bi912605/.config/nvim'
+let g:netrw_dirhist_2='/Users/bi912605/work/idea/demo/target/surefire-reports'
 let g:netrw_dirhist_1='/Users/bi912605/.config/nvim'

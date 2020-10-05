@@ -23,6 +23,7 @@ set -gx PATH $HOME/.nodebrew/current/bin $PATH
 # Aliases
 alias tree="tree -ACN"
 alias vi="nvim"
+alias rm='rmtrash'
 alias startrh='VBoxManage startvm "RHEL7" --type headless'
 alias stoprh='VBoxManage controlvm "RHEL7" acpipowerbutton'
 alias startri='VBoxManage startvm "RHEL7 IBM" --type headless'
@@ -41,3 +42,7 @@ alias startgl='VBoxManage startvm "RHEL7 Gitlab" --type headless'
 alias stopgl='VBoxManage controlvm "RHEL7 Gitlab" acpipowerbutton'
 alias startrj='VBoxManage startvm "RHEL7 Jenkins" --type headless'
 alias stoprj='VBoxManage controlvm "RHEL7 Jenkins" acpipowerbutton'
+alias startr74r='VBoxManage startvm "RHEL7.4 Redmine" --type headless'
+alias stopr74r='VBoxManage controlvm "RHEL7.4 Redmine" acpipowerbutton'
+alias startr74s='VBoxManage startvm "RHEL7.4 SonarQube" --type headless'
+alias stopr74s='VBoxManage controlvm "RHEL7.4 SonarQube" acpipowerbutton'
